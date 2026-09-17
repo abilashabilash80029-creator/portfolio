@@ -27,13 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuIcon = document.getElementById("menu-icon");
     const navLinksContainer = document.querySelector(".nav-links");
     menuIcon.addEventListener("click", () => {
-        navLinksContainer.classList.toggle("active");
+        const isOpen = navLinksContainer.classList.toggle("active");
+        menuIcon.setAttribute("aria-expanded", String(isOpen));
     });
     // Close mobile menu when a link is clicked
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
             if (navLinksContainer.classList.contains("active")) {
                 navLinksContainer.classList.remove("active");
+                menuIcon.setAttribute("aria-expanded", "false");
             }
         });
     });

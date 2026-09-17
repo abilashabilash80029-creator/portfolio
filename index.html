@@ -6,7 +6,8 @@
     <title>Abilash A - Personal Portfolio</title>
     <meta name="description" content="Personal portfolio of Abilash A, an aspiring software developer and AI/ML enthusiast.">
     <meta name="keywords" content="Abilash A, Portfolio, Software Developer, AI, ML, Web Developer">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="profile.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -29,12 +30,12 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-icons">
-                <div class="theme-switch">
+                <button type="button" class="theme-switch" aria-label="Switch color theme">
                     <i class="fas fa-sun" id="theme-toggle"></i>
-                </div>
-                <div class="menu-icon" id="menu-icon">
+                </button>
+                <button type="button" class="menu-icon" id="menu-icon" aria-label="Open navigation menu" aria-expanded="false">
                     <i class="fas fa-bars"></i>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
@@ -48,12 +49,12 @@
                     <h3><span class="typing-effect"></span></h3>
                     <p>Motivated and enthusiastic B.Sc. Computer Science graduate with a CGPA of 7.57, seeking an entry-level position in the IT industry. Eager to apply programming knowledge, problem-solving skills, and technical expertise while contributing to organizational growth.</p>
                     <div class="buttons">
-                        <a href="resume/Abilash_Resume.pdf" class="btn" download>Download Resume</a>
+                        <a href="Abilash_Resume.pdf" class="btn" download>Download Resume</a>
                         <a href="#contact" class="btn">Contact Me</a>
                     </div>
                 </div>
                 <div class="image-content">
-                    <img src="images/profile.png" alt="Abilash A" class="profile-pic">
+                    <img src="profile.png" alt="Abilash A" class="profile-pic">
                 </div>
             </div>
         </section>
@@ -102,7 +103,7 @@
             <h2 class="section-title">Projects</h2>
             <div class="projects-container">
                 <div class="project-card">
-                    <img src="images/chatbot-project.png" alt="AI-Assisted Chatbot">
+                    <img src="profile.png" alt="AI-Assisted Chatbot project preview">
                     <div class="project-info">
                         <h3>AI-Assisted Chatbot</h3>
                         <p>Developed a chatbot application using AI tools and GitHub. This project involved applying core programming concepts, debugging, testing, and project management skills.</p>
@@ -110,13 +111,13 @@
                             <span>AI Tools</span><span>GitHub</span><span>Python</span>
                         </div>
                         <div class="project-buttons">
-                            <a href="https://github.com/your-username/your-chatbot-repo" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
-                            <a href="https://your-chatbot-live-url.com" target="_blank" rel="noopener noreferrer" class="btn">Live Demo</a>
+                            <a href="https://github.com/abilashabilash80029-creator" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+                            <a href="https://abilashabilash80029-creator.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="btn">Live Demo</a>
                         </div>
                     </div>
                 </div>
                  <div class="project-card">
-                    <img src="images/portfolio-project.png" alt="Personal Portfolio">
+                    <img src="profile.png" alt="Personal Portfolio project preview">
                     <div class="project-info">
                         <h3>Personal Portfolio</h3>
                         <p>A responsive personal portfolio website created using HTML, CSS, and JavaScript to showcase my skills, projects, and experiences. Features a modern dark/light theme.</p>
@@ -124,8 +125,8 @@
                             <span>HTML</span><span>CSS</span><span>JavaScript</span>
                         </div>
                         <div class="project-buttons">
-                            <a href="#" class="btn">GitHub</a>
-                            <a href="#" class="btn">Live Demo</a>
+                            <a href="https://github.com/abilashabilash80029-creator/portfolio" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+                            <a href="https://abilashabilash80029-creator.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="btn">Live Demo</a>
                         </div>
                     </div>
                 </div>
@@ -188,11 +189,11 @@
                     <div class="info-item"><i class="fas fa-phone"></i> +91 7010676289</div>
                     <div class="info-item"><i class="fas fa-map-marker-alt"></i> Tamil Nadu, India</div>
                     <div class="social-links">
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/abilashabilash80029-creator" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="https://www.linkedin.com/in/abilash-a-409497372" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/YOUR_UNIQUE_FORM_ID" method="POST">
+                <form class="contact-form" action="mailto:abilashabilash109@gmail.com" method="POST" enctype="text/plain">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -206,7 +207,7 @@
     <footer class="footer">
         <p>&copy; 2026 Abilash A. All Rights Reserved.</p>
         <div class="social-links">
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/abilashabilash80029-creator" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/abilash-a-409497372" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
@@ -214,6 +215,6 @@
     <!-- Typed.js for typing effect -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- Main Script -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

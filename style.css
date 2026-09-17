@@ -40,6 +40,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     transition: background 0.3s, color 0.3s;
+    overflow-x: hidden;
 }
 
 section {
@@ -86,6 +87,7 @@ section {
     align-items: center;
     width: 100%;
     max-width: 1200px;
+    min-width: 0;
 }
 .logo {
     font-size: 1.8rem;
@@ -121,6 +123,7 @@ section {
     color: var(--text-color);
     cursor: pointer;
     margin-left: 1.5rem;
+    background: transparent;
 }
 .menu-icon {
     display: none;
@@ -140,6 +143,7 @@ section {
     gap: 4rem;
     width: 100%;
     max-width: 1200px;
+    min-width: 0;
     margin: 0 auto;
 }
 .text-content h1 {
@@ -277,6 +281,7 @@ section {
     width: 100%;
     height: 220px;
     object-fit: cover;
+    display: block;
 }
 .project-info {
     padding: 1.5rem;
@@ -389,6 +394,7 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: flex-start;
+    min-width: 0;
 }
 .contact-info h3 {
     font-size: 1.8rem;
@@ -488,7 +494,7 @@ section {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .header {
         padding: 1rem 5%;
     }
@@ -527,6 +533,9 @@ section {
     }
     .contact-container {
         grid-template-columns: 1fr;
+    }
+    .home-content {
+        gap: 2rem;
     }
     .buttons {
         display: flex;

@@ -14,12 +14,11 @@ This is a static website, so it can be hosted without a server or database.
 
 ### GitHub Pages
 
-1. Create a new public repository on GitHub.
-2. Upload all files and folders from this `Portfolio` directory.
-3. Open the repository's **Settings > Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select the `main` branch and the `/ (root)` folder, then click **Save**.
-6. Open the generated URL, usually `https://your-username.github.io/repository-name/`.
+1. Create a new public repository named `portfolio` on GitHub.
+2. Upload the root files from this directory: `index.html`, `style.css`, `script.js`, `profile.png`, and `Abilash_Resume.pdf`.
+3. Push or upload the `.github/workflows/deploy-pages.yml` file too.
+4. Open the repository's **Settings > Pages** and set the source to **GitHub Actions**.
+5. Open the generated URL: `https://abilashabilash80029-creator.github.io/portfolio/`.
 
 ### Netlify
 
@@ -77,12 +76,11 @@ After deployment, replace the placeholder **Live Demo** link above with your pub
 Portfolio/
 │
 ├── index.html          # Main HTML file
-├── css/
-│   └── style.css       # All styles for the website
-├── js/
-│   └── script.js       # All interactive functionality
-├── images/             # Folder for profile and project images
-├── resume/             # Folder for the resume PDF
+├── style.css           # All styles for the website
+├── script.js           # All interactive functionality
+├── profile.png         # Profile and project preview image
+├── Abilash_Resume.pdf  # Downloadable resume
+├── .github/workflows/  # GitHub Pages deployment workflow
 └── README.md           # Project documentation
 ```
 
@@ -113,14 +111,14 @@ This portfolio is designed to be easily customized.
     - Replace the `action` URL in the `<form>` tag in `index.html` with your unique Formspree URL.
 
 3.  **Images:**
-    - Place your profile picture in the `images/` folder (e.g., `profile.png`).
-    - Add your project images to the `images/` folder.
-    - Update the `src` attribute in the `<img>` tags in `index.html` to match your new image filenames.
+    - Place your profile picture in the repository root (e.g., `profile.png`).
+    - Add project images to the repository root if you have them.
+    - Update the `src` attribute in the `<img>` tags in `index.html` to match your image filenames.
 
 4.  **Resume:**
-    - Place your resume (e.g., `Abilash_Resume.pdf`) in the `resume/` folder.
+    - Place your resume (e.g., `Abilash_Resume.pdf`) in the repository root.
     - Make sure the `href` in the "Download Resume" button in `index.html` matches the filename.
 
 5.  **Styling:**
-    - Open `css/style.css` to change the website's appearance.
+    - Open `style.css` to change the website's appearance.
     - You can easily change the color scheme by modifying the CSS variables at the top of the file (e.g., `--main-color`).
