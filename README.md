@@ -4,7 +4,39 @@ This is a complete, professional, and responsive personal portfolio website for 
 
 ## Live Demo
 
-**(Link to be added once deployed)**
+**Expected URL:** https://abilashabilash80029-creator.github.io/Portfolio/
+
+The URL becomes active after this folder is uploaded to a GitHub repository named `Portfolio` and the Pages workflow completes.
+
+## Hosting
+
+This is a static website, so it can be hosted without a server or database.
+
+### GitHub Pages
+
+1. Create a new public repository on GitHub.
+2. Upload all files and folders from this `Portfolio` directory.
+3. Open the repository's **Settings > Pages**.
+4. Under **Build and deployment**, choose **Deploy from a branch**.
+5. Select the `main` branch and the `/ (root)` folder, then click **Save**.
+6. Open the generated URL, usually `https://your-username.github.io/repository-name/`.
+
+### Netlify
+
+1. Open [Netlify](https://app.netlify.com/) and choose **Add new site > Import an existing project**.
+2. Connect your GitHub repository.
+3. Set the publish directory to `.` and leave the build command empty.
+4. Click **Deploy site**.
+
+### Vercel
+
+1. Open [Vercel](https://vercel.com/) and choose **Add New > Project**.
+2. Import your GitHub repository.
+3. Choose **Other** as the framework preset.
+4. Leave the build command empty and set the output directory to `.`.
+5. Click **Deploy**.
+
+After deployment, replace the placeholder **Live Demo** link above with your public URL.
 
 ## Features
 
@@ -64,6 +96,10 @@ You can run this website in two simple ways:
 2.  **Using a Live Server (Recommended for Development):**
     - If you have a code editor like VS Code, you can install the "Live Server" extension.
     - Right-click on `index.html` and choose "Open with Live Server". This will automatically open and refresh the page whenever you make changes.
+
+3.  **Using Python's local server:**
+    - Open a terminal in this folder and run `python -m http.server 8000`.
+    - Open `http://localhost:8000` in your browser.
 
 ## Customization Guide
 
